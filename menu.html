@@ -1,0 +1,197 @@
+<html><head></head><body><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskox - Menú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="icon" href="img/Logo Muskox Sin Fondo.ico">
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #3c2f2f;
+        }
+        .section-title {
+            color: #3c2f2f;
+            margin-bottom: 2rem;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #3c2f2f;
+            color: white;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/index.html"><i class="bi bi-cup-hot"></i> Muskox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Ordenar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Nuestro Menú</h2>
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-coffee-tab" data-bs-toggle="pill" data-bs-target="#pills-coffee" type="button" role="tab" aria-controls="pills-coffee" aria-selected="true">Café</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-tea-tab" data-bs-toggle="pill" data-bs-target="#pills-tea" type="button" role="tab" aria-controls="pills-tea" aria-selected="false">Té</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-pastry-tab" data-bs-toggle="pill" data-bs-target="#pills-pastry" type="button" role="tab" aria-controls="pills-pastry" aria-selected="false">Pastelería</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-coffee" role="tabpanel" aria-labelledby="pills-coffee-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1596952954288-16862d37405b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Taza de café espresso sobre una mesa de madera" width="400" height="480">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café Espresso</h5>
+                                    <p class="card-text">Intenso y aromático, el clásico espresso que necesitas.</p>
+                                    <p class="card-text"><strong>Precio: $2.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://apasionados-por-el-cafe.s3.amazonaws.com/wp-content/uploads/2020/06/taza-de-cafe-americano.jpg" class="card-img-top" alt="Taza de café americano humeante" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café Americano</h5>
+                                    <p class="card-text">Café espresso con agua caliente para un sabor suave.</p>
+                                    <p class="card-text"><strong>Precio: $3.00</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://clubdelcafe.net/wp-content/uploads/2020/05/Preparaci%C3%B3n-de-un-caf%C3%A9-latte-scaled.jpeg" class="card-img-top" alt="Taza de café latte con arte latte en forma de corazón" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café Latte</h5>
+                                    <p class="card-text">Café con leche cremoso, perfecto para cualquier momento.</p>
+                                    <p class="card-text"><strong>Precio: $3.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-tea" role="tabpanel" aria-labelledby="pills-tea-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTMDEr5rldvWaJICSs3GVqYmdDJjD1x-qQgjiImUXo56bqXaBR_jT0ghmaVeqdANU4S" class="card-img-top" alt="Taza de té verde con hojas de té alrededor" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Té Verde</h5>
+                                    <p class="card-text">Fresco y revitalizante, un clásico que no falla.</p>
+                                    <p class="card-text"><strong>Precio: $2.00</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQj13EZgPzC3VQhGW63vywqVA3KQt_wjDcIIBXoZptXrSos8CNJQguW5slNJ8YJ8Ts3" class="card-img-top" alt="Taza de té negro con vapor saliendo" width="400" height="340">
+                                <div class="card-body">
+                                    <h5 class="card-title">Té Negro</h5>
+                                    <p class="card-text">Aromático y robusto, ideal para los amantes del té.</p>
+                                    <p class="card-text"><strong>Precio: $2.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://pequenosgrandesaciertos.ufesa.es/wp-content/uploads/2016/10/te-de-frutas.jpg" class="card-img-top" alt="Taza de té de frutas con rodajas de frutas alrededor" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Té de Frutas</h5>
+                                    <p class="card-text">Fresco y dulce, una mezcla de frutas para disfrutar.</p>
+                                    <p class="card-text"><strong>Precio: $2.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-pastry" role="tabpanel" aria-labelledby="pills-pastry-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://png.pngtree.com/background/20230614/original/pngtree-slice-piece-of-chocolate-cake-on-a-plate-picture-image_3474852.jpg" class="card-img-top" alt="Rebanada de pastel de chocolate con ganache" width="200" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pastel de Chocolate</h5>
+                                    <p class="card-text">Suave y húmedo, con un intenso sabor a chocolate.</p>
+                                    <p class="card-text"><strong>Precio: $3.00</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://media.scoolinary.app/blog/images/2023/11/vista-de-croissant-gourmet-recien-horneados.jpg" class="card-img-top" alt="Croissant recién horneado y dorado" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Croissant</h5>
+                                    <p class="card-text">Crujiente y mantecoso, perfecto para el desayuno.</p>
+                                    <p class="card-text"><strong>Precio: $2.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="card">
+                                <img src="https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2020/09/tarta-de-frutas-BIS.jpg" class="card-img-top" alt="Tarta de frutas con fresas, kiwis y duraznos" width="400" height="300">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tarta de Frutas</h5>
+                                    <p class="card-text">Deliciosa y fresca, llena de sabores naturales.</p>
+                                    <p class="card-text"><strong>Precio: $3.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Muskox Holding Company. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/muskox_colombian_coffee?igsh=MTI2cWh4MnN4ZHBvcA==" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+</body></html>

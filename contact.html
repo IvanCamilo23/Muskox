@@ -1,0 +1,185 @@
+<html><head><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskox - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="icon" href="img/Logo Muskox Sin Fondo.ico">
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #f8f9fa;
+            color: #3c2f2f;
+        }
+        .navbar {
+            background-color: #3c2f2f;
+        }
+        .section-title {
+            color: #3c2f2f;
+            margin-bottom: 2rem;
+        }
+        .btn-primary {
+            background-color: #3c2f2f;
+            border-color: #3c2f2f;
+        }
+        .btn-primary:hover {
+            background-color: #5a4545;
+            border-color: #5a4545;
+        }
+        footer {
+            background-color: #3c2f2f;
+            color: white;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+        .contact-form {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .form-control:focus {
+            border-color: #3c2f2f;
+            box-shadow: 0 0 0 0.2rem rgba(60, 47, 47, 0.25);
+        }
+        .contact-info {
+            background-color: #3c2f2f;
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .contact-info i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero {
+            background-image: url('https://cafe-aroma.com/images/contact-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero-content {
+            background-color: rgba(0,0,0,0.5);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/index.html"><i class="bi bi-cup-hot"></i> Muskox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Ordenar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="display-4">Contáctanos</h1>
+            <p class="lead">Estamos aquí para escucharte</p>
+        </div>
+    </div>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4" data-aos="fade-right">
+                    <div class="contact-form">
+                        <h2 class="section-title">Envíanos un mensaje</h2>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto:</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h2 class="section-title">Información de Contacto</h2>
+                        <div class="mb-4">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Calle del Café 123, Ciudad Aroma, CP 12345</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-telephone"></i>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-envelope"></i>
+                            <p>info@#####.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-clock"></i>
+                            <p>Lunes a Viernes: 7:00 AM - 10:00 PM<br>
+                                Sábados y Domingos: 8:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Muskox Holding Company. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/muskox_colombian_coffee?igsh=MTI2cWh4MnN4ZHBvcA=="><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
